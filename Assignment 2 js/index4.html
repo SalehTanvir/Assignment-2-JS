@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Name Length and Capital,Small Letters</title>
+</head>
+<body>
+    <script>
+        let name;
+        let i,countU =0,countL=0;
+        
+        name = prompt('Enter Your Name Without Space: ');
+        for(i=0;i< name.length;i++){
+            let character = name[i];
+            if( character>= 'A' && character<='Z')
+            {
+                countU++;
+            }else if(character>= 'a' && character<='z')
+            {
+                countL++;
+            }
+        }
+        console.log('Your Name is: ' + name)
+        console.log('Your Name Length: ' + name.length);
+        console.log('Capital Letters: ' + countU);
+        console.log('Small Letters: ' + countL);
+    
+    </script>
+</body>
+</html>
